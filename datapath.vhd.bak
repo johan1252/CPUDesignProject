@@ -1,0 +1,62 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity datapath is
+port(
+
+
+
+);
+end entity datapath;
+
+architecture behavioural of datapath is
+
+component ALU_Toplevel is
+port(
+		inA : in std_logic_vector(31 downto 0);
+		inB : in std_logic_vector(31 downto 0);
+		ANDsel : in std_logic;
+		ORsel : in std_logic;
+		NOTsel : in std_logic;
+		NEGsel : in std_logic;
+		SHRsel : in std_logic;
+		SHLsel : in std_logic;
+		RORsel : in std_logic;
+		ROLsel : in std_logic;
+		
+		SUBsel : in std_logic;
+		ADDsel : in std_logic;
+		MULsel : in std_logic;
+		DIVsel : in std_logic;
+		resultHi : out std_logic_vector(31 downto 0);
+		resultLo : out std_LOGIC_VECTOR(31 downto 0)
+);
+end component ALU_Toplevel;
+
+begin
+
+ALU : ALU_Toplevel
+port map(
+		inA =>
+		inB =>
+		ANDsel =>
+		ORsel => 
+		NOTsel =>
+		NEGsel =>
+		SHRsel =>
+		SHLsel =>
+		RORsel =>
+		ROLsel =>
+		SUBsel =>
+		ADDsel =>
+		MULsel =>
+		DIVsel =>
+		resultHi =>
+		resultLo =>
+);
+
+
+end architecture;
+
+
+

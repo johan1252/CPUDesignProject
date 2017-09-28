@@ -1,0 +1,2044 @@
+# Reading C:/altera/13.0sp1/modelsim_ae/tcl/vsim/pref.tcl 
+# do SRC_CPU_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ae\win32aloem/modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ae\win32aloem/modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity memory
+# -- Compiling architecture behavioral of memory
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MDR_Unit
+# -- Compiling architecture bdf_type of MDR_Unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG32
+# -- Compiling architecture behaviour of REG32
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG64
+# -- Compiling architecture behaviour of REG64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux0
+# -- Compiling architecture SYN of lpm_mux0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_encoder
+# -- Compiling architecture behaviour of lpm_encoder
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux1
+# -- Compiling architecture SYN of lpm_mux1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU_Bus_Redesign
+# -- Compiling architecture behaviour of CPU_Bus_Redesign
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_Toplevel
+# -- Compiling architecture behavioural of ALU_Toplevel
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/negate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity negate
+# -- Compiling architecture SYN of negate
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_right
+# -- Compiling architecture SYN of shift_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_left
+# -- Compiling architecture SYN of shift_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/add.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add
+# -- Compiling architecture SYN of add
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sub
+# -- Compiling architecture SYN of sub
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_right
+# -- Compiling architecture SYN of rotate_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_left
+# -- Compiling architecture SYN of rotate_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity signed_division
+# -- Compiling architecture SYN of signed_division
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/PCincr.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PCincr
+# -- Compiling architecture SYN of pcincr
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity marReg
+# -- Compiling architecture behaviour of marReg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder4to16
+# -- Compiling architecture Behavioral of decoder4to16
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity selAndEncode
+# -- Compiling architecture behaviour of selAndEncode
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegSpecial0
+# -- Compiling architecture behaviour of RegSpecial0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConFF
+# -- Compiling architecture behaviour of ConFF
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder2to4
+# -- Compiling architecture SYN of decoder2to4
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/common.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling package Common
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/IRreg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IRreg
+# -- Compiling architecture behaviour of IRreg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Seven_Segment.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Seven_Segment
+# -- Compiling architecture Behavior of Seven_Segment
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/mult32bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult32bit
+# -- Compiling architecture SYN of mult32bit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity datapath
+# -- Compiling architecture behavioural of datapath
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Common
+# -- Compiling entity control_unit
+# -- Compiling architecture Behavior of control_unit
+# 
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/add.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add
+# -- Compiling architecture SYN of add
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_Toplevel
+# -- Compiling architecture behavioural of ALU_Toplevel
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConFF
+# -- Compiling architecture behaviour of ConFF
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Common
+# -- Compiling entity control_unit
+# -- Compiling architecture Behavior of control_unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU_Bus_Redesign
+# -- Compiling architecture behaviour of CPU_Bus_Redesign
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity datapath
+# -- Compiling architecture behavioural of datapath
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder2to4
+# -- Compiling architecture SYN of decoder2to4
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder4to16
+# -- Compiling architecture Behavioral of decoder4to16
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/fa1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fa1
+# -- Compiling architecture behaviour of fa1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_decode0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_decode0
+# -- Compiling architecture SYN of lpm_decode0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_encoder
+# -- Compiling architecture behaviour of lpm_encoder
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux0
+# -- Compiling architecture SYN of lpm_mux0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux1
+# -- Compiling architecture SYN of lpm_mux1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity marReg
+# -- Compiling architecture behaviour of marReg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MDR_Unit
+# -- Compiling architecture bdf_type of MDR_Unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity memory
+# -- Compiling architecture behavioral of memory
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/negate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity negate
+# -- Compiling architecture SYN of negate
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG32
+# -- Compiling architecture behaviour of REG32
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG64
+# -- Compiling architecture behaviour of REG64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegSpecial0
+# -- Compiling architecture behaviour of RegSpecial0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_left
+# -- Compiling architecture SYN of rotate_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_right
+# -- Compiling architecture SYN of rotate_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity selAndEncode
+# -- Compiling architecture behaviour of selAndEncode
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift
+# -- Compiling architecture SYN of shift
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_left
+# -- Compiling architecture SYN of shift_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_right
+# -- Compiling architecture SYN of shift_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shiftL64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shiftL64
+# -- Compiling architecture SYN of shiftl64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity signed_division
+# -- Compiling architecture SYN of signed_division
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sub
+# -- Compiling architecture SYN of sub
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/workingBooth.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity workingBooth
+# -- Compiling architecture behaviour of workingBooth
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity phase3_tb
+# -- Compiling architecture behaviour of phase3_tb
+# ** Warning: [4] Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd(121): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd(123): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  phase3_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps phase3_tb 
+# //  ModelSim ALTERA 10.1d Nov  2 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.common
+# Loading work.phase3_tb(behaviour)
+# Loading work.datapath(behavioural)
+# Loading work.control_unit(behavior)
+# Loading work.cpu_bus_redesign(behaviour)
+# Loading work.lpm_encoder(behaviour)
+# Loading lpm.lpm_components
+# Loading work.lpm_mux0(syn)
+# Loading ieee.std_logic_unsigned(body)
+# Loading lpm.lpm_mux(lpm_syn)
+# Loading work.selandencode(behaviour)
+# Loading work.decoder4to16(behavioral)
+# Loading work.conff(behaviour)
+# Loading work.decoder2to4(syn)
+# Loading lpm.lpm_decode(lpm_syn)
+# Loading work.alu_toplevel(behavioural)
+# Loading work.pcincr(syn)
+# Loading ieee.std_logic_signed(body)
+# Loading lpm.lpm_add_sub(lpm_syn)
+# Loading lpm.lpm_add_sub_unsigned(lpm_syn)
+# Loading work.sub(syn)
+# Loading lpm.lpm_add_sub_signed(lpm_syn)
+# Loading work.add(syn)
+# Loading work.shift_right(syn)
+# Loading lpm.lpm_clshift(lpm_syn)
+# Loading work.shift_left(syn)
+# Loading work.rotate_right(syn)
+# Loading work.rotate_left(syn)
+# Loading work.negate(syn)
+# Loading work.mult32bit(syn)
+# Loading lpm.lpm_hint_evaluation(body)
+# Loading lpm.lpm_mult(lpm_syn)
+# Loading work.signed_division(syn)
+# Loading lpm.lpm_divide(behave)
+# Loading work.seven_segment(behavior)
+# Loading work.memory(behavioral)
+# Loading work.reg64(behaviour)
+# Loading work.reg32(behaviour)
+# Loading work.mdr_unit(bdf_type)
+# Loading work.lpm_mux1(syn)
+# Loading work.marreg(behaviour)
+# Loading work.regspecial0(behaviour)
+# Loading work.irreg(behaviour)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: 12jc144  Hostname: ECE-VDI-1-04  ProcessID: 3772
+# 
+#           Attempting to use alternate WLF file "./wlftxkiqac".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftxkiqac
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 23000 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/b2v_MDR_Unit/b2v_inst1/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/b2v_MDR_Unit/b2v_inst1/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_signed_division/LPM_DIVIDE_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/BUSmap/b2v_inst2/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/BUSmap/b2v_inst2/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+do SRC_CPU_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity memory
+# -- Compiling architecture behavioral of memory
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MDR_Unit
+# -- Compiling architecture bdf_type of MDR_Unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG32
+# -- Compiling architecture behaviour of REG32
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG64
+# -- Compiling architecture behaviour of REG64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux0
+# -- Compiling architecture SYN of lpm_mux0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_encoder
+# -- Compiling architecture behaviour of lpm_encoder
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux1
+# -- Compiling architecture SYN of lpm_mux1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU_Bus_Redesign
+# -- Compiling architecture behaviour of CPU_Bus_Redesign
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_Toplevel
+# -- Compiling architecture behavioural of ALU_Toplevel
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/negate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity negate
+# -- Compiling architecture SYN of negate
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_right
+# -- Compiling architecture SYN of shift_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_left
+# -- Compiling architecture SYN of shift_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/add.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add
+# -- Compiling architecture SYN of add
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sub
+# -- Compiling architecture SYN of sub
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_right
+# -- Compiling architecture SYN of rotate_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_left
+# -- Compiling architecture SYN of rotate_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity signed_division
+# -- Compiling architecture SYN of signed_division
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/PCincr.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PCincr
+# -- Compiling architecture SYN of pcincr
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity marReg
+# -- Compiling architecture behaviour of marReg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder4to16
+# -- Compiling architecture Behavioral of decoder4to16
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity selAndEncode
+# -- Compiling architecture behaviour of selAndEncode
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegSpecial0
+# -- Compiling architecture behaviour of RegSpecial0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConFF
+# -- Compiling architecture behaviour of ConFF
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder2to4
+# -- Compiling architecture SYN of decoder2to4
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/common.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling package Common
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/IRreg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IRreg
+# -- Compiling architecture behaviour of IRreg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Seven_Segment.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Seven_Segment
+# -- Compiling architecture Behavior of Seven_Segment
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/mult32bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult32bit
+# -- Compiling architecture SYN of mult32bit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity datapath
+# -- Compiling architecture behavioural of datapath
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Common
+# -- Compiling entity control_unit
+# -- Compiling architecture Behavior of control_unit
+# 
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/add.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add
+# -- Compiling architecture SYN of add
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_Toplevel
+# -- Compiling architecture behavioural of ALU_Toplevel
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConFF
+# -- Compiling architecture behaviour of ConFF
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Common
+# -- Compiling entity control_unit
+# -- Compiling architecture Behavior of control_unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU_Bus_Redesign
+# -- Compiling architecture behaviour of CPU_Bus_Redesign
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity datapath
+# -- Compiling architecture behavioural of datapath
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder2to4
+# -- Compiling architecture SYN of decoder2to4
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder4to16
+# -- Compiling architecture Behavioral of decoder4to16
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/fa1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fa1
+# -- Compiling architecture behaviour of fa1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_decode0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_decode0
+# -- Compiling architecture SYN of lpm_decode0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_encoder
+# -- Compiling architecture behaviour of lpm_encoder
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux0
+# -- Compiling architecture SYN of lpm_mux0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux1
+# -- Compiling architecture SYN of lpm_mux1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity marReg
+# -- Compiling architecture behaviour of marReg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MDR_Unit
+# -- Compiling architecture bdf_type of MDR_Unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity memory
+# -- Compiling architecture behavioral of memory
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/negate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity negate
+# -- Compiling architecture SYN of negate
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG32
+# -- Compiling architecture behaviour of REG32
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG64
+# -- Compiling architecture behaviour of REG64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegSpecial0
+# -- Compiling architecture behaviour of RegSpecial0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_left
+# -- Compiling architecture SYN of rotate_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_right
+# -- Compiling architecture SYN of rotate_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity selAndEncode
+# -- Compiling architecture behaviour of selAndEncode
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift
+# -- Compiling architecture SYN of shift
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_left
+# -- Compiling architecture SYN of shift_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_right
+# -- Compiling architecture SYN of shift_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shiftL64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shiftL64
+# -- Compiling architecture SYN of shiftl64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity signed_division
+# -- Compiling architecture SYN of signed_division
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sub
+# -- Compiling architecture SYN of sub
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/workingBooth.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity workingBooth
+# -- Compiling architecture behaviour of workingBooth
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity phase3_tb
+# -- Compiling architecture behaviour of phase3_tb
+# ** Warning: [4] Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd(123): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd(125): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  phase3_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps phase3_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.common
+# Loading work.phase3_tb(behaviour)
+# Loading work.datapath(behavioural)
+# Loading work.control_unit(behavior)
+# Loading work.cpu_bus_redesign(behaviour)
+# Loading work.lpm_encoder(behaviour)
+# Loading lpm.lpm_components
+# Loading work.lpm_mux0(syn)
+# Loading ieee.std_logic_unsigned(body)
+# Loading lpm.lpm_mux(lpm_syn)
+# Loading work.selandencode(behaviour)
+# Loading work.decoder4to16(behavioral)
+# Loading work.conff(behaviour)
+# Loading work.decoder2to4(syn)
+# Loading lpm.lpm_decode(lpm_syn)
+# Loading work.alu_toplevel(behavioural)
+# Loading work.pcincr(syn)
+# Loading ieee.std_logic_signed(body)
+# Loading lpm.lpm_add_sub(lpm_syn)
+# Loading lpm.lpm_add_sub_unsigned(lpm_syn)
+# Loading work.sub(syn)
+# Loading lpm.lpm_add_sub_signed(lpm_syn)
+# Loading work.add(syn)
+# Loading work.shift_right(syn)
+# Loading lpm.lpm_clshift(lpm_syn)
+# Loading work.shift_left(syn)
+# Loading work.rotate_right(syn)
+# Loading work.rotate_left(syn)
+# Loading work.negate(syn)
+# Loading work.mult32bit(syn)
+# Loading lpm.lpm_hint_evaluation(body)
+# Loading lpm.lpm_mult(lpm_syn)
+# Loading work.signed_division(syn)
+# Loading lpm.lpm_divide(behave)
+# Loading work.seven_segment(behavior)
+# Loading work.memory(behavioral)
+# Loading work.reg64(behaviour)
+# Loading work.reg32(behaviour)
+# Loading work.mdr_unit(bdf_type)
+# Loading work.lpm_mux1(syn)
+# Loading work.marreg(behaviour)
+# Loading work.regspecial0(behaviour)
+# Loading work.irreg(behaviour)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: 12jc144  Hostname: ECE-VDI-1-04  ProcessID: 3772
+# 
+#           Attempting to use alternate WLF file "./wlftdz2nve".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftdz2nve
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 23000 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/b2v_MDR_Unit/b2v_inst1/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/b2v_MDR_Unit/b2v_inst1/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_signed_division/LPM_DIVIDE_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/BUSmap/b2v_inst2/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/BUSmap/b2v_inst2/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+do SRC_CPU_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity memory
+# -- Compiling architecture behavioral of memory
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MDR_Unit
+# -- Compiling architecture bdf_type of MDR_Unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG32
+# -- Compiling architecture behaviour of REG32
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG64
+# -- Compiling architecture behaviour of REG64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux0
+# -- Compiling architecture SYN of lpm_mux0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_encoder
+# -- Compiling architecture behaviour of lpm_encoder
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux1
+# -- Compiling architecture SYN of lpm_mux1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU_Bus_Redesign
+# -- Compiling architecture behaviour of CPU_Bus_Redesign
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_Toplevel
+# -- Compiling architecture behavioural of ALU_Toplevel
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/negate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity negate
+# -- Compiling architecture SYN of negate
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_right
+# -- Compiling architecture SYN of shift_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_left
+# -- Compiling architecture SYN of shift_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/add.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add
+# -- Compiling architecture SYN of add
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sub
+# -- Compiling architecture SYN of sub
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_right
+# -- Compiling architecture SYN of rotate_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_left
+# -- Compiling architecture SYN of rotate_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity signed_division
+# -- Compiling architecture SYN of signed_division
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/PCincr.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PCincr
+# -- Compiling architecture SYN of pcincr
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity marReg
+# -- Compiling architecture behaviour of marReg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder4to16
+# -- Compiling architecture Behavioral of decoder4to16
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity selAndEncode
+# -- Compiling architecture behaviour of selAndEncode
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegSpecial0
+# -- Compiling architecture behaviour of RegSpecial0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConFF
+# -- Compiling architecture behaviour of ConFF
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder2to4
+# -- Compiling architecture SYN of decoder2to4
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/common.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Compiling package Common
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/IRreg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IRreg
+# -- Compiling architecture behaviour of IRreg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Seven_Segment.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Seven_Segment
+# -- Compiling architecture Behavior of Seven_Segment
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/mult32bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult32bit
+# -- Compiling architecture SYN of mult32bit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity datapath
+# -- Compiling architecture behavioural of datapath
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Common
+# -- Compiling entity control_unit
+# -- Compiling architecture Behavior of control_unit
+# 
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/add.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add
+# -- Compiling architecture SYN of add
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_Toplevel
+# -- Compiling architecture behavioural of ALU_Toplevel
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConFF
+# -- Compiling architecture behaviour of ConFF
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Common
+# -- Compiling entity control_unit
+# -- Compiling architecture Behavior of control_unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU_Bus_Redesign
+# -- Compiling architecture behaviour of CPU_Bus_Redesign
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity datapath
+# -- Compiling architecture behavioural of datapath
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder2to4
+# -- Compiling architecture SYN of decoder2to4
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder4to16
+# -- Compiling architecture Behavioral of decoder4to16
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/fa1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fa1
+# -- Compiling architecture behaviour of fa1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_decode0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_decode0
+# -- Compiling architecture SYN of lpm_decode0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_encoder
+# -- Compiling architecture behaviour of lpm_encoder
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux0
+# -- Compiling architecture SYN of lpm_mux0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lpm_mux1
+# -- Compiling architecture SYN of lpm_mux1
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity marReg
+# -- Compiling architecture behaviour of marReg
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MDR_Unit
+# -- Compiling architecture bdf_type of MDR_Unit
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity memory
+# -- Compiling architecture behavioral of memory
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/negate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity negate
+# -- Compiling architecture SYN of negate
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG32
+# -- Compiling architecture behaviour of REG32
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REG64
+# -- Compiling architecture behaviour of REG64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegSpecial0
+# -- Compiling architecture behaviour of RegSpecial0
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_left
+# -- Compiling architecture SYN of rotate_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate_right
+# -- Compiling architecture SYN of rotate_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity selAndEncode
+# -- Compiling architecture behaviour of selAndEncode
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift
+# -- Compiling architecture SYN of shift
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_left
+# -- Compiling architecture SYN of shift_left
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_right
+# -- Compiling architecture SYN of shift_right
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/shiftL64.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shiftL64
+# -- Compiling architecture SYN of shiftl64
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity signed_division
+# -- Compiling architecture SYN of signed_division
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sub
+# -- Compiling architecture SYN of sub
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/workingBooth.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity workingBooth
+# -- Compiling architecture behaviour of workingBooth
+# vcom -93 -work work {Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package Common
+# -- Compiling entity phase3_tb
+# -- Compiling architecture behaviour of phase3_tb
+# ** Warning: [4] Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd(125): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd(127): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  phase3_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps phase3_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.common
+# Loading work.phase3_tb(behaviour)
+# Loading work.datapath(behavioural)
+# Loading work.control_unit(behavior)
+# Loading work.cpu_bus_redesign(behaviour)
+# Loading work.lpm_encoder(behaviour)
+# Loading lpm.lpm_components
+# Loading work.lpm_mux0(syn)
+# Loading ieee.std_logic_unsigned(body)
+# Loading lpm.lpm_mux(lpm_syn)
+# Loading work.selandencode(behaviour)
+# Loading work.decoder4to16(behavioral)
+# Loading work.conff(behaviour)
+# Loading work.decoder2to4(syn)
+# Loading lpm.lpm_decode(lpm_syn)
+# Loading work.alu_toplevel(behavioural)
+# Loading work.pcincr(syn)
+# Loading ieee.std_logic_signed(body)
+# Loading lpm.lpm_add_sub(lpm_syn)
+# Loading lpm.lpm_add_sub_unsigned(lpm_syn)
+# Loading work.sub(syn)
+# Loading lpm.lpm_add_sub_signed(lpm_syn)
+# Loading work.add(syn)
+# Loading work.shift_right(syn)
+# Loading lpm.lpm_clshift(lpm_syn)
+# Loading work.shift_left(syn)
+# Loading work.rotate_right(syn)
+# Loading work.rotate_left(syn)
+# Loading work.negate(syn)
+# Loading work.mult32bit(syn)
+# Loading lpm.lpm_hint_evaluation(body)
+# Loading lpm.lpm_mult(lpm_syn)
+# Loading work.signed_division(syn)
+# Loading lpm.lpm_divide(behave)
+# Loading work.seven_segment(behavior)
+# Loading work.memory(behavioral)
+# Loading work.reg64(behaviour)
+# Loading work.reg32(behaviour)
+# Loading work.mdr_unit(bdf_type)
+# Loading work.lpm_mux1(syn)
+# Loading work.marreg(behaviour)
+# Loading work.regspecial0(behaviour)
+# Loading work.irreg(behaviour)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: 12jc144  Hostname: ECE-VDI-1-04  ProcessID: 3772
+# 
+#           Attempting to use alternate WLF file "./wlftimd05m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftimd05m
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 23000 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/b2v_MDR_Unit/b2v_inst1/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/b2v_MDR_Unit/b2v_inst1/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_signed_division/LPM_DIVIDE_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/BUSmap/b2v_inst2/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /phase3_tb/DUT/BUSmap/b2v_inst2/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_multiply/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_negate/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_add/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_sub/LPM_ADD_SUB_component/L2/V
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_rotate_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_left/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_shift_logical_right/LPM_CLSHIFT_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /phase3_tb/DUT/ALU/ALU_PCincr/LPM_ADD_SUB_component/L1/U

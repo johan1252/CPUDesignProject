@@ -1,0 +1,9 @@
+Library IEEE;
+USE IEEE.std_logic_1164.all;
+
+Entity control_unit is
+	Port(
+		Clock, Reset, Stop, CON_FF : in std_logic;
+		
+		
+	)

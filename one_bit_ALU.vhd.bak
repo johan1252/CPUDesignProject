@@ -1,0 +1,20 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity one_bit_ALU is
+generic (gate delay:time);
+port(	in1, in2, cin: in std_logic;
+		result, cout : out std_logic;
+		opcode: in std_logic_vector(1 downto 0));
+		);
+end entity one_bit_ALU;
+
+architecture behaviour of one_bit_ALU is
+
+begin
+	andOperation : process is 
+		
+	
+	
+	end process; 
+end architecture; 

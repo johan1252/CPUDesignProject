@@ -1,0 +1,42 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity ALU_Toplevel is
+port(
+		inA : in std_logic_vector(31 downto 0);
+		inB : in std_logic_vector(31 downto 0);
+		opcode: in std_logic_vector(4 downto 0);
+		cout: out std_logic;
+		result : out std_logic_vector(31 downto 0)
+);
+end entity ALU_Toplevel;
+
+
+component multi_bit_ALU is
+port( 
+		in1: in std_logic_vector(31 downto 0);
+		in2: in std_logic_vector(31 downto 0);
+		result : out std_logic_vector(31 downto 0);
+		opcode: in std_logic_vector(4 downto 0);
+		cin : in std_logic;
+		cout: out std_logic
+		);
+end component multi_bit_ALU;		
+
+architecture behavioural of ALU_Toplevel is
+
+signal cin : std_logic;
+
+ALU_ins : multi_bit_ALU
+port map(
+		in1 => inA,
+		in2 => inB,
+		result => result,
+		opcode => opcode,
+		cin => cin,
+		cout => cout
+);
+
+if(opcode = "00110")then
+	cin <= '1';
+	

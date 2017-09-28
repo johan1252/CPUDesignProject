@@ -1,0 +1,171 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use IEEE.std_logic_arith.all; 
+
+-- entity declaration only; no definition here
+ENTITY phase2_tb IS
+	END;
+
+	-- Architecture of the testbench with the signal names
+ARCHITECTURE behaviour OF phase2_tb IS 
+
+signal BoothMULsel_tb, ANDsel_tb, ORsel_tb, NOTsel_tb, NEGsel_tb, SHRsel_tb, SHLsel_tb, RORsel_tb, ROLsel_tb, SUBsel_tb, ADDsel_tb, MULsel_tb, DIVsel_tb  : std_logic;
+signal PCout_tb,MDRout_tb, read_tb, Cout_tb, HIout_tb, In_Portout_tb, LOout_tb, Zhighout_tb, Zlowout_tb, IncPC_tb : std_logic;
+Signal MARout_tb : std_logic;
+signal Yin_tb, Zin_tb, IRin_tb : std_LOGIC;
+signal MDRin_tb, MARin_tb, Csignin_tb, Hiin_tb, In_port_Strobe_tb, Out_port_in_tb, Loin_tb, PCin_tb : std_LOGIC;
+signal Mdatain_tb : std_LOGIC_VECTOR(31 downto 0);
+signal BusMuxOut : std_LOGIC_VECTOR(31 downto 0); --these signals are all test signals
+signal MDRValue : std_LOGIC_VECTOR(31 downto 0);
+signal MARValue : std_LOGIC_VECTOR(8 downto 0);
+signal R0Value : std_LOGIC_VECTOR(31 downto 0);
+signal R1Value : std_LOGIC_VECTOR(31 downto 0);
+signal R2Value : std_LOGIC_VECTOR(31 downto 0); 
+signal R3Value : std_LOGIC_VECTOR(31 downto 0);
+signal R4Value : std_LOGIC_VECTOR(31 downto 0);
+signal R5Value : std_LOGIC_VECTOR(31 downto 0);
+signal R6Value : std_LOGIC_VECTOR(31 downto 0);
+signal R14Value : std_LOGIC_VECTOR(31 downto 0);
+signal OutPortValue :  std_LOGIC_VECTOR(31 downto 0);
+signal inPortValue :  std_LOGIC_VECTOR(31 downto 0);
+signal ZLoValue : std_LOGIC_VECTOR(31 downto 0);
+signal YValue : std_LOGIC_VECTOR(31 downto 0);
+signal PCValue : std_LOGIC_VECTOR(31 downto 0);
+signal IRValue : std_LOGIC_VECTOR(31 downto 0);
+signal HIValue : std_LOGIC_VECTOR(31 downto 0);
+signal LOValue : std_LOGIC_VECTOR(31 downto 0);
+signal ZHiValue : std_LOGIC_VECTOR(31 downto 0);
+signal address_tb :  unsigned(31 downto 0);
+signal MemWrite_tb, R1inValue :  std_logic;
+signal In_port_data_tb,tempCout_tb : std_LOGIC_VECTOR(31 downto 0); 
+SIGNAL Clock_tb,instruction, CONin_tb: Std_logic;
+signal Gra_tb, Grb_tb, Grc_tb, Rin_tb, Rout_tb, BAout_tb, CON_tb, tempConFF_tb : std_LOGIC;
+
+TYPE State IS (default, PC_load_p1, PC_load_p2, T0, T1, T2, T3, T4, T5, T6, T7, Result);
+SIGNAL Present_state: State := default;
+
+TYPE insState IS (Load_Case_1, Load_Case_2, Load_Case_3, Load_Case_4, Load_Case_5,Pre_load_R4, Store_Case_1,Store_Case_1_Check,  Store_Case_2, 
+						Store_Case_2_Check, Store_Case_3, Store_Case_3_Check, Addi, Andi, Ori, Pre_load_R5,  Pre_load_R6, brzr,brnz,brmi,brpl, jr, jal, Pre_load_Hi, Pre_load_LO, mfhi, mflo, outInstr, inInstr);
+SIGNAL present_ins: insState := Load_Case_1;
+
+-- component instantiation of the datapath
+COMPONENT datapath
+PORT (
+clk : in std_LOGIC;
+	PCout, Zlowout, MDRout, read_sel, Cout, HIout, In_Portout, LOout, Zhighout, IncPC : in std_logic;
+	BoothMULsel, ANDsel, ORsel, NOTsel, NEGsel, SHRsel, SHLsel, RORsel, ROLsel, SUBsel, ADDsel, MULsel, DIVsel  : in std_logic;
+	MARout : in std_LOGIC;
+	Yin, Zin, IRin, CONin : in std_LOGIC;
+	MDRin, MARin, Csignin, Hiin, In_port_Strobe, Out_port_in, Loin, PCin : in std_LOGIC;
+	tempBusOut : out std_LOGIC_VECTOR(31 downto 0);
+	MDRValue : out std_LOGIC_VECTOR(31 downto 0);
+	MARValue : out std_LOGIC_VECTOR(8 downto 0);
+	R0Value : out std_LOGIC_VECTOR(31 downto 0);
+	R1Value : out std_LOGIC_VECTOR(31 downto 0);
+	R2Value : out std_LOGIC_VECTOR(31 downto 0); 
+	R3Value : out std_LOGIC_VECTOR(31 downto 0);
+	R4Value : out std_LOGIC_VECTOR(31 downto 0);
+	R5Value : out std_LOGIC_VECTOR(31 downto 0);
+	R6Value : out std_LOGIC_VECTOR(31 downto 0);
+	R14Value : out std_LOGIC_VECTOR(31 downto 0);
+	inPortValue : out std_LOGIC_VECTOR(31 downto 0);
+	ZLoValue : out std_LOGIC_VECTOR(31 downto 0);
+	YValue :  out std_LOGIC_VECTOR(31 downto 0);
+	PCValue :  out std_LOGIC_VECTOR(31 downto 0);
+	IRValue :  out std_LOGIC_VECTOR(31 downto 0);
+	HIValue :  out std_LOGIC_VECTOR(31 downto 0);
+	LOValue,tempCout :  out std_LOGIC_VECTOR(31 downto 0);
+	MemWrite : in std_logic; 
+	In_port_data : in std_LOGIC_VECTOR(31 downto 0);
+	Out_port_data : out std_LOGIC_VECTOR(31 downto 0);
+	ZHiValue : out std_LOGIC_VECTOR(31 downto 0);
+	Gra, Grb, Grc, Rin, Rout, BAout : in std_LOGIC;
+	R1inValue, CON, tempConFF : out std_LOGIC
+	);
+END COMPONENT datapath;
+
+BEGIN
+
+DUT : datapath
+--port mapping: between the dut and the testbench signals
+PORT MAP (
+PCout => PCout_tb,
+Zlowout => Zlowout_tb,
+MDRout => MDRout_tb,
+read_sel => read_tb,
+Cout => Cout_tb,   
+HIout => HIout_tb, 
+In_Portout => In_Portout_tb, 
+Out_port_in => Out_port_in_tb,
+LOout => LOout_tb, 
+Zhighout => Zhighout_tb, 
+IncPC => IncPC_tb,
+ANDsel => ANDsel_tb, 
+ORsel => ORsel_tb, 
+NOTsel => NOTsel_tb, 
+NEGsel => NEGsel_tb, 
+SHRsel => SHRsel_tb, 
+SHLsel => SHLsel_tb, 
+RORsel => RORsel_tb, 
+ROLsel => ROLsel_tb, 
+SUBsel => SUBsel_tb, 
+ADDsel => ADDsel_tb, 
+MULsel => MULsel_tb, 
+DIVsel => DIVsel_tb,
+BoothMULsel => BoothMULsel_tb, 
+MDRin => MDRin_tb,
+Csignin => Csignin_tb, 
+Hiin => Hiin_tb,
+In_port_Strobe => In_Port_Strobe_tb, 
+Loin => Loin_tb, 
+MARin => MARin_tb,
+MARout => MARout_tb,
+PCin => PCin_tb,
+IRin => IRin_tb,
+Clk => Clock_tb,
+Zin => Zin_tb,
+Yin => Yin_tb,
+tempBusOut => BusMuxOut,
+MDRValue => MDRValue,
+R0Value => R0Value,
+R1Value => R1Value,
+R2Value => R2Value,
+R3Value => R3Value,
+R4Value => R4Value,
+R5Value => R5Value,
+R6Value => R6Value,
+R14Value => R14Value,
+out_port_data => OutPortValue,
+inPortValue => inPortValue,
+ZLoValue => ZLoValue,
+YValue => YValue,
+PCValue => PCValue,
+IRValue => IRValue,
+HIValue => HIValue,
+LOValue => LOValue,
+ZHiValue => ZHiValue,
+memWrite => memWrite_tb,
+In_port_data => In_port_data_tb,
+Gra => Gra_tb,
+Grb => Grb_tb,
+Grc => Grc_tb,
+Rin => Rin_tb,
+Rout => Rout_tb,
+BAout => BAout_tb,
+CONin => CONin_tb,
+MARValue => MARValue,
+R1inValue => R1inValue,
+tempCout => tempCout_tb,
+CON => CON_tb,
+tempConFF => tempConFF_tb
+);
+
+clk_process :process
+begin 
+		clock_tb <= '0';
+		wait for 20ns;  --for 0.5 ns signal is '0'.
+		clock_tb <= '1';
+		wait for 10ns;  --for next 0.5 ns signal is '1'.
+end process;
+			
+END ARCHITECTURE;

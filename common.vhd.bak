@@ -1,0 +1,5 @@
+package Common is
+
+type State IS (Reset_state, fetch0, fetch1, fetch2, add3, add4, add5, add6, load3, load4, load5, load6, load7, nop);
+
+end Common;

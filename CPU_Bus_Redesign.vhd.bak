@@ -1,0 +1,338 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY CPU_Bus IS 
+	PORT
+	(
+
+	);
+END CPU_Bus;
+
+ARCHITECTURE behaviour OF CPU_Bus is
+
+COMPONENT lpm_encoder
+	PORT(eq0 : IN STD_LOGIC;
+		 eq1 : IN STD_LOGIC;
+		 eq2 : IN STD_LOGIC;
+		 eq3 : IN STD_LOGIC;
+		 eq4 : IN STD_LOGIC;
+		 eq5 : IN STD_LOGIC;
+		 eq6 : IN STD_LOGIC;
+		 eq7 : IN STD_LOGIC;
+		 eq8 : IN STD_LOGIC;
+		 eq9 : IN STD_LOGIC;
+		 eq10 : IN STD_LOGIC;
+		 eq11 : IN STD_LOGIC;
+		 eq12 : IN STD_LOGIC;
+		 eq13 : IN STD_LOGIC;
+		 eq14 : IN STD_LOGIC;
+		 eq15 : IN STD_LOGIC;
+		 eq16 : IN STD_LOGIC;
+		 eq17 : IN STD_LOGIC;
+		 eq18 : IN STD_LOGIC;
+		 eq19 : IN STD_LOGIC;
+		 eq20 : IN STD_LOGIC;
+		 eq21 : IN STD_LOGIC;
+		 eq22 : IN STD_LOGIC;
+		 eq23 : IN STD_LOGIC;
+		 eq24 : IN STD_LOGIC;
+		 eq25 : IN STD_LOGIC;
+		 eq26 : IN STD_LOGIC;
+		 eq27 : IN STD_LOGIC;
+		 eq28 : IN STD_LOGIC;
+		 eq29 : IN STD_LOGIC;
+		 eq30 : IN STD_LOGIC;
+		 eq31 : IN STD_LOGIC;
+		 data : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
+	);
+END COMPONENT;
+
+COMPONENT lpm_mux0
+	PORT(data0x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data10x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data11x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data12x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data13x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data14x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data15x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data16x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data17x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data18x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data19x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data1x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data20x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data21x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data22x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data23x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data24x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data25x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data26x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data27x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data28x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data29x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data2x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data30x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data31x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data3x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data4x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data5x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data6x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data7x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data8x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 data9x : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 sel : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+		 result : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	);
+END COMPONENT;
+
+COMPONENT mdr_unit
+	PORT(ENABLE : IN STD_LOGIC;
+		 CLK : IN STD_LOGIC;
+		 RESET : IN STD_LOGIC;
+		 READ_MUX : IN STD_LOGIC;
+		 MDR_IN_0 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 MDR_IN_1 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 MDR_OUT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	);
+END COMPONENT;
+
+COMPONENT reg32
+	PORT(ENABLE : IN STD_LOGIC;
+		 CLK : IN STD_LOGIC;
+		 RESET : IN STD_LOGIC;
+		 D_IN : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		 D_OUT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	);
+END COMPONENT;
+
+
+
+SIGNAL	BusMuxIn-Hi :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-In_Port :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-Lo :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-MDR :  STD_LOGIC_VECTOR(31 downto 0);
+SIGNAL	BusMuxIn-PC :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R0 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R1 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R2 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R3 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R4 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R5 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R6 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R7 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R8 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R9 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R10 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R11 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R12 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R13 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R14 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-R15 :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-ZHi :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn-ZLo :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxIn_Csign :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	BusMuxOut :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+SIGNAL	Cout :  STD_LOGIC;
+SIGNAL	HIout :  STD_LOGIC;
+SIGNAL	In_Portout :  STD_LOGIC;
+SIGNAL	LOout :  STD_LOGIC;
+SIGNAL	Mdatain :  STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL	MDRout :  STD_LOGIC;
+SIGNAL	muxSelect :  STD_LOGIC_VECTOR(4 DOWNTO 0);
+SIGNAL	PCout :  STD_LOGIC;
+SIGNAL	R0out :  STD_LOGIC;
+SIGNAL	R1out :  STD_LOGIC;
+SIGNAL	R2out :  STD_LOGIC;
+SIGNAL	R3out :  STD_LOGIC;
+SIGNAL	R4out :  STD_LOGIC;
+SIGNAL	R5out :  STD_LOGIC;
+SIGNAL	R6out :  STD_LOGIC;
+SIGNAL	R7out :  STD_LOGIC;
+SIGNAL	R8out :  STD_LOGIC;
+SIGNAL	R9out :  STD_LOGIC;
+SIGNAL	R10out :  STD_LOGIC;
+SIGNAL	R11out :  STD_LOGIC;
+SIGNAL	R12out :  STD_LOGIC;
+SIGNAL	R13out :  STD_LOGIC;
+SIGNAL	R14out :  STD_LOGIC;
+SIGNAL	R15out :  STD_LOGIC;
+SIGNAL	Zhighout :  STD_LOGIC;
+SIGNAL	Zlowout :  STD_LOGIC;
+
+b2v_inst : lpm_encoder
+PORT MAP(eq0 => R0out,
+		 eq1 => R1out,
+		 eq2 => R2out,
+		 eq3 => R3out,
+		 eq4 => R4out,
+		 eq5 => R5out,
+		 eq6 => R6out,
+		 eq7 => R7out,
+		 eq8 => R8out,
+		 eq9 => R9out,
+		 eq10 => R10out,
+		 eq11 => R11out,
+		 eq12 => R12out,
+		 eq13 => R13out,
+		 eq14 => R14out,
+		 eq15 => R15out,
+		 eq16 => HIout,
+		 eq17 => LOout,
+		 eq18 => Zhighout,
+		 eq19 => Zlowout,
+		 eq20 => PCout,
+		 eq21 => MDRout,
+		 eq22 => In_Portout,
+		 eq23 => Cout,
+		 data => muxSelect);
+
+
+b2v_inst2 : lpm_mux0
+PORT MAP(data0x => BusMuxIn-R0,
+		 data10x => GDFX_TEMP_SIGNAL_0,
+		 data11x => GDFX_TEMP_SIGNAL_1,
+		 data12x => GDFX_TEMP_SIGNAL_2,
+		 data13x => GDFX_TEMP_SIGNAL_3,
+		 data14x => GDFX_TEMP_SIGNAL_4,
+		 data15x => GDFX_TEMP_SIGNAL_5,
+		 data16x => BusMuxIn-Hi,
+		 data17x => BusMuxIn-Lo,
+		 data18x => BusMuxIn-ZHi,
+		 data19x => BusMuxIn-ZLo,
+		 data1x => GDFX_TEMP_SIGNAL_6,
+		 data20x => BusMuxIn-PC,
+		 data21x => GDFX_TEMP_SIGNAL_7,
+		 data22x => BusMuxIn-In_Port,
+		 data23x => BusMuxIn-In_Port,
+		 data2x => BusMuxIn-R2,
+		 data3x => BusMuxIn-R3,
+		 data4x => BusMuxIn-R4,
+		 data5x => BusMuxIn-R5,
+		 data6x => BusMuxIn-R6,
+		 data7x => BusMuxIn-R7,
+		 data8x => BusMuxIn-R8,
+		 data9x => BusMuxIn-R9,
+		 sel => muxSelect,
+		 result => BusMuxOut);
+
+
+b2v_MDR_Unit : mdr_unit
+PORT MAP(MDR_IN_0 => BusMuxOut,
+		 MDR_IN_1 => Mdatain);
+
+
+b2v_REG0 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R0);
+
+
+b2v_REG1 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => GDFX_TEMP_SIGNAL_8);
+
+
+b2v_REG10 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => GDFX_TEMP_SIGNAL_9);
+
+
+b2v_REG11 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => GDFX_TEMP_SIGNAL_10);
+
+
+b2v_REG12 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => GDFX_TEMP_SIGNAL_11);
+
+
+b2v_REG13 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => GDFX_TEMP_SIGNAL_12);
+
+
+b2v_REG14 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => GDFX_TEMP_SIGNAL_13);
+
+
+b2v_REG15 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => GDFX_TEMP_SIGNAL_14);
+
+
+b2v_REG2 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R2);
+
+
+b2v_REG3 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R3);
+
+
+b2v_REG4 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R4);
+
+
+b2v_REG5 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R5);
+
+
+b2v_REG6 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R6);
+
+
+b2v_REG7 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R7);
+
+
+b2v_REG8 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R8);
+
+
+b2v_REG9 : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-R9);
+
+
+b2v_REGC : reg32
+PORT MAP(D_IN => BusMuxOut);
+
+
+b2v_REGHi : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-Hi);
+
+
+b2v_REGIn_Port : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-In_Port);
+
+
+b2v_REGLo : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-Lo);
+
+
+b2v_REGPC : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-PC);
+
+
+b2v_REGZHI : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-ZHi);
+
+
+b2v_REGZLO : reg32
+PORT MAP(D_IN => BusMuxOut,
+		 D_OUT => BusMuxIn-ZLo);
