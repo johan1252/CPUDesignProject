@@ -1,0 +1,51 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity reg32_tb is
+end reg32_tb;
+
+architecture behaviour of reg32_tb is
+
+component reg32
+	PORT(
+D_IN: in std_logic_vector(31 downto 0); 
+			D_OUT: out std_logic_vector(31 downto 0); 
+			ENABLE,CLK,RESET: in std_logic
+	);
+end component;	
+	signal clk : std_LOGIC;
+	signal reset : std_LOGIC;
+	signal enable : std_LOGIC;
+	signal regIn : std_LOGIC_VECTOR(31 downto 0);
+	signal regOut : std_LOGIC_VECTOR(31 downto 0);
+	
+	begin
+	--unit under test (UUT)
+	UUT : reg32 PORT MAP(
+		CLK => clk,
+		ENABLE => enable,
+		reset => reset,
+		D_IN => regIn,
+		D_OUT => regOut
+	);
+	
+	clk_process :process
+	begin 
+			clk <= '0';
+			wait for 0.5ns;  --for 0.5 ns signal is '0'.
+			clk <= '1';
+			wait for 0.5ns;  --for next 0.5 ns signal is '1'.
+   end process;
+	
+	--stimulus process
+	stimulate_proc : process
+	begin
+		enable <= '1';
+		reset <= '1';
+		wait for 5ns;
+		regIn <= "00000000000000000000000000000101";
+		wait for 10ns;
+		regIn <= "00010000000000000000000000000001";
+	end process;
+end;	

@@ -1,0 +1,47 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity ALU_tb is
+end ALU_tb;
+
+architecture behaviour of ALU_tb is
+
+component multi_bit_ALU
+	PORT(
+		in1: in std_logic_vector(63 downto 0);
+		in2: in std_logic_vector(63 downto 0);
+		result : out std_logic_vector(63 downto 0);
+		opcode: in std_logic_vector(31 downto 0);
+		cin : in std_logic;
+		cout: out std_logic
+	);
+end component;	
+	
+	signal in1 : std_LOGIC_VECTOR(63 downto 0);
+	signal in2 : std_LOGIC_VECTOR(63 downto 0);
+	signal result : std_logic_vector(63 downto 0);
+	signal opcode: std_logic_vector(31 downto 0);
+	signal cin : std_logic;
+	signal cout: std_logic
+	
+	begin
+	--unit under test (UUT)
+	UUT : multi_bit_ALU PORT MAP(
+		in1 => in1,
+		in2 => in2,
+		result => result,
+		opcode => opcode,
+		cin => cin,
+		cout => cout
+	);
+	
+	--stimulus process
+	stimulate_proc : process
+	begin
+		in1 <= "1001";
+		in2 <= "0011";
+		cin = '0';
+		
+	end process;
+end;	

@@ -1,0 +1,35 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use IEEE.std_logic_arith.all; 
+
+-- entity declaration only; no definition here
+ENTITY random_tb IS
+	END;
+
+	-- Architecture of the testbench with the signal names
+ARCHITECTURE behaviour OF random_tb IS 
+
+
+SIGNAL Clock_tb: Std_logic;
+
+
+
+
+
+BEGIN
+
+
+clk_process :process
+begin 
+		clock_tb <= '0';
+		wait for 20ns;  --for 0.5 ns signal is '0'.
+		clock_tb <= '1';
+		wait for 10ns;  --for next 0.5 ns signal is '1'.
+end process;
+
+SecondProc : PROCESS (clk) -- do the required job in each state
+BEGIN
+				
+		END PROCESS;
+
+END ARCHITECTURE;

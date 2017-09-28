@@ -1,0 +1,24 @@
+library ieee; 
+use ieee.std_logic_1164.all; 
+
+entity ConFF is 
+	port( BusMuxOut : in std_logic_vector(31 downto 0);
+			IRout : in std_logic_vector(31 downto 0);
+			Control : out std_logic
+	);
+end entity;
+ 
+architecture behaviour of ConFF is 
+
+begin
+	process(CLK,RESET)
+		begin 
+		if RESET = '0' then 
+			D_OUT <= (others => '0');
+		elsif CLK'event and CLK = '1' then 
+			if ENABLE = '1' then 
+				D_OUT <= D_IN; 
+			end if; 
+		end if; 
+	end process; 
+end architecture; 

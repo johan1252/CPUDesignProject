@@ -1,0 +1,1269 @@
+m255
+K3
+13
+cModel Technology
+Z0 dZ:\ELEC374\Project Phase 1 MMJ\simulation\modelsim
+Eadd
+Z1 w1456163176
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dZ:\ELEC374\Project Phase 1 MMJ\simulation\modelsim
+Z5 8Z:/ELEC374/Project Phase 1 MMJ/add.vhd
+Z6 FZ:/ELEC374/Project Phase 1 MMJ/add.vhd
+l0
+L42
+V`MhC95CE]Q3m1l`8clXHk2
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1459266058.944000
+Z9 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/add.vhd|
+Z10 !s107 Z:/ELEC374/Project Phase 1 MMJ/add.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 fBDoCf`m`Bl6JEQ77hQ_?2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 3 add 0 22 `MhC95CE]Q3m1l`8clXHk2
+l73
+L52
+V?7[MeW4k=6jX0d7N:;8eU0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 ?_;_`^Jb6?<;5XOKC0;X?1
+!i10b 1
+Ealu_toplevel
+Z13 w1459112460
+R2
+R3
+R4
+Z14 8Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd
+Z15 FZ:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd
+l0
+L7
+V3hS2c5Go:CzjDHH8h9@N80
+R7
+31
+Z16 !s108 1459266059.847000
+Z17 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd|
+Z18 !s107 Z:/ELEC374/Project Phase 1 MMJ/ALU_Toplevel.vhd|
+R11
+R12
+!s100 CeAhO4gkBKWiHf]5zBUk?3
+!i10b 1
+Abehavioural
+R2
+R3
+DEx4 work 12 alu_toplevel 0 22 3hS2c5Go:CzjDHH8h9@N80
+l134
+L29
+VeLdD3aJ6l9hfDLbB^fz762
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 SZfid7H]Jf5b7LND2C_Rm1
+!i10b 1
+Pcommon
+w1459132876
+R4
+8Z:/ELEC374/Project Phase 1 MMJ/common.vhd
+FZ:/ELEC374/Project Phase 1 MMJ/common.vhd
+l0
+L1
+Vi973f6>en06K@OiVZ@RPg0
+R7
+31
+R11
+R12
+!s100 `0Jfl?oMTL:i7RF=_0f0o1
+!i10b 1
+!s108 1459266054.757000
+!s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/common.vhd|
+!s107 Z:/ELEC374/Project Phase 1 MMJ/common.vhd|
+Econff
+Z19 w1459110442
+R2
+R3
+R4
+Z20 8Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd
+Z21 FZ:/ELEC374/Project Phase 1 MMJ/ConFF.vhd
+l0
+L4
+VONVTTNj<P:`<[O?im_4DJ0
+R7
+31
+Z22 !s108 1459266060.563000
+Z23 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd|
+Z24 !s107 Z:/ELEC374/Project Phase 1 MMJ/ConFF.vhd|
+R11
+R12
+!s100 >@mBUODSjPAW9ek5BJDoB2
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 5 conff 0 22 ONVTTNj<P:`<[O?im_4DJ0
+l28
+L12
+VhczF0`gWb]e55C>SEK^XI3
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 SH6;A?RdhRCB79_6coPlJ2
+!i10b 1
+Econtrol_unit
+Z25 w1459265736
+Z26 DPx4 work 6 common 0 22 i973f6>en06K@OiVZ@RPg0
+R2
+R3
+R4
+Z27 8Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd
+Z28 FZ:/ELEC374/Project Phase 1 MMJ/control_unit.vhd
+l0
+L5
+V`;fVR8Ra3HiT_KD1O9o<I0
+R7
+31
+Z29 !s108 1459266061.272000
+Z30 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd|
+Z31 !s107 Z:/ELEC374/Project Phase 1 MMJ/control_unit.vhd|
+R11
+R12
+!s100 8UOeWi?CYaHHQf^lRAfMR2
+!i10b 1
+Abehavior
+R26
+R2
+R3
+DEx4 work 12 control_unit 0 22 `;fVR8Ra3HiT_KD1O9o<I0
+l22
+L18
+VIj?hM23lbCXcQ1[Vobg]j0
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 jzTO<GBbzgUnU_7MW@LL63
+!i10b 1
+Ecpu_bus_redesign
+Z32 w1458435278
+R2
+R3
+R4
+Z33 8Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd
+Z34 FZ:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd
+l0
+L9
+VI>FiHD63cl>YTi7d=D0FK2
+R7
+31
+Z35 !s108 1459266062.007000
+Z36 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd|
+Z37 !s107 Z:/ELEC374/Project Phase 1 MMJ/CPU_Bus_Redesign.vhd|
+R11
+R12
+!s100 e>5A<2R]IK7Gl8<9_>QKK2
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 16 cpu_bus_redesign 0 22 I>FiHD63cl>YTi7d=D0FK2
+l105
+L24
+VlS5zMzh8jdMRTTHi5KK^_1
+R7
+31
+R35
+R36
+R37
+R11
+R12
+!s100 ?a2aQ@iG6mnZ4469MFQ1J1
+!i10b 1
+Edatapath
+Z38 w1459265710
+R26
+Z39 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R2
+R3
+R4
+Z40 8Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd
+Z41 FZ:/ELEC374/Project Phase 1 MMJ/datapath.vhd
+l0
+L8
+V:?WH_D?M>F2B8DzcUo5@W2
+R7
+31
+Z42 !s108 1459266062.745000
+Z43 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd|
+Z44 !s107 Z:/ELEC374/Project Phase 1 MMJ/datapath.vhd|
+R11
+R12
+!s100 fgJ3MzB55DFiOUD]0aA@Z3
+!i10b 1
+Abehavioural
+R26
+R39
+R2
+R3
+DEx4 work 8 datapath 0 22 :?WH_D?M>F2B8DzcUo5@W2
+l214
+L45
+Vne;a]6UH<dSJKD@MTYobf2
+R7
+31
+R42
+R43
+R44
+R11
+R12
+!s100 mz>7TJ0L=gEKhaE`Fk22@3
+!i10b 1
+Edecoder2to4
+Z45 w1457119696
+R2
+R3
+R4
+Z46 8Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd
+Z47 FZ:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd
+l0
+L42
+VV]cb6YlNL>C=Y@`XSIE<82
+R7
+31
+Z48 !s108 1459266063.491000
+Z49 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd|
+Z50 !s107 Z:/ELEC374/Project Phase 1 MMJ/Decoder2to4.vhd|
+R11
+R12
+!s100 TgJCzOURUHBi5CUXKHMlK0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 11 decoder2to4 0 22 V]cb6YlNL>C=Y@`XSIE<82
+l76
+L54
+VjnzzC`4Q:NU@K1IVnTWNW2
+R7
+31
+R48
+R49
+R50
+R11
+R12
+!s100 e=O7_gb`eE5<bmW4EROkP3
+!i10b 1
+Edecoder4to16
+Z51 w1457065984
+R2
+R3
+R4
+Z52 8Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd
+Z53 FZ:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd
+l0
+L5
+ViGU_TXSanb4V`=ola^NKc2
+R7
+31
+Z54 !s108 1459266064.223000
+Z55 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd|
+Z56 !s107 Z:/ELEC374/Project Phase 1 MMJ/decoder4to16.vhd|
+R11
+R12
+!s100 H:IdPU45e8g5^kWc6AX6N3
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 12 decoder4to16 0 22 iGU_TXSanb4V`=ola^NKc2
+l14
+L13
+Ve3A4CQJ8k=XKRGHJ@<KOH1
+R7
+31
+R54
+R55
+R56
+R11
+R12
+!s100 :CjK5Bz5SIQh6JlPD<BUO3
+!i10b 1
+Efa1
+Z57 w1456252380
+R2
+R3
+R4
+Z58 8Z:/ELEC374/Project Phase 1 MMJ/fa1.vhd
+Z59 FZ:/ELEC374/Project Phase 1 MMJ/fa1.vhd
+l0
+L7
+VOM:T=6JH7?DnH0A3Za<Ef3
+R7
+31
+Z60 !s108 1459266064.997000
+Z61 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/fa1.vhd|
+Z62 !s107 Z:/ELEC374/Project Phase 1 MMJ/fa1.vhd|
+R11
+R12
+!s100 0;gYWM5Ia@>]Xh<gd6zYY2
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 3 fa1 0 22 OM:T=6JH7?DnH0A3Za<Ef3
+l21
+L18
+VKi:LKah;=VCe=6_8kel:P1
+R7
+31
+R60
+R61
+R62
+R11
+R12
+!s100 YihBe5=bTU<V2YRL@=alc3
+!i10b 1
+Eirreg
+Z63 w1459110048
+R2
+R3
+R4
+Z64 8Z:/ELEC374/Project Phase 1 MMJ/IRreg.vhd
+Z65 FZ:/ELEC374/Project Phase 1 MMJ/IRreg.vhd
+l0
+L4
+V[zUj0dd8P<RPW<a2jg>370
+R7
+31
+Z66 !s108 1459266055.297000
+Z67 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/IRreg.vhd|
+Z68 !s107 Z:/ELEC374/Project Phase 1 MMJ/IRreg.vhd|
+R11
+R12
+!s100 o><6>461S8b9AYgo;LVgU2
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 5 irreg 0 22 [zUj0dd8P<RPW<a2jg>370
+l13
+L11
+VjnA^FONCd8K:9:hc=:G>a1
+R7
+31
+R66
+R67
+R68
+R11
+R12
+!s100 B7PIHkDkQ5h>Yon>J0_QY3
+!i10b 1
+Elpm_decode0
+Z69 w1456163178
+R2
+R3
+R4
+Z70 8Z:/ELEC374/Project Phase 1 MMJ/lpm_decode0.vhd
+Z71 FZ:/ELEC374/Project Phase 1 MMJ/lpm_decode0.vhd
+l0
+L42
+V?[8Y48D>U7j2WEK<6=>3o1
+R7
+31
+Z72 !s108 1459266065.740000
+Z73 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/lpm_decode0.vhd|
+Z74 !s107 Z:/ELEC374/Project Phase 1 MMJ/lpm_decode0.vhd|
+R11
+R12
+!s100 2=PR^6Q^X374P[5ze@FSV3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 11 lpm_decode0 0 22 ?[8Y48D>U7j2WEK<6=>3o1
+l132
+L82
+V29;:zc4>FO`>dz72:l1Wb2
+R7
+31
+R72
+R73
+R74
+R11
+R12
+!s100 :dh7G[J26;cf_dJ597TA73
+!i10b 1
+Elpm_encoder
+Z75 w1456248238
+R2
+R3
+R4
+Z76 8Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd
+Z77 FZ:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd
+l0
+L9
+V<N<RVheVLlWIGKFYTlg5I1
+R7
+31
+Z78 !s108 1459266066.471000
+Z79 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd|
+Z80 !s107 Z:/ELEC374/Project Phase 1 MMJ/lpm_encoder.vhd|
+R11
+R12
+!s100 kmEi@JO_l_4<hmL<ndRE63
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 11 lpm_encoder 0 22 <N<RVheVLlWIGKFYTlg5I1
+l50
+L49
+V8VRKA5XoiCLB5JanWCVjl2
+R7
+31
+R78
+R79
+R80
+R11
+R12
+!s100 7j6faGZ_NLQ[26Doz?52W0
+!i10b 1
+Elpm_mux0
+R69
+Z81 DPx3 lpm 14 lpm_components 0 22 aHRA3clF>2DcWDhgFTAbM3
+R2
+R3
+R4
+Z82 8Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd
+Z83 FZ:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd
+l0
+L42
+Vc[hLRz2MSZP:lN^fC[<Hi2
+R7
+31
+Z84 !s108 1459266067.181000
+Z85 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd|
+Z86 !s107 Z:/ELEC374/Project Phase 1 MMJ/lpm_mux0.vhd|
+R11
+R12
+!s100 ANLiooAbKzT2]UjL5cHA00
+!i10b 1
+Asyn
+R81
+R2
+R3
+DEx4 work 8 lpm_mux0 0 22 c[hLRz2MSZP:lN^fC[<Hi2
+l122
+L83
+VDFf=`a;Z=O1=A`=Gezb9g1
+R7
+31
+R84
+R85
+R86
+R11
+R12
+!s100 [bPg[KVJQgJd38OglGfmR0
+!i10b 1
+Elpm_mux1
+R69
+R81
+R2
+R3
+R4
+Z87 8Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd
+Z88 FZ:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd
+l0
+L42
+VC8S22TXD>eE[6mR=fJgDl0
+R7
+31
+Z89 !s108 1459266068.035000
+Z90 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd|
+Z91 !s107 Z:/ELEC374/Project Phase 1 MMJ/lpm_mux1.vhd|
+R11
+R12
+!s100 UcUV_H1Izd=ZTMa2Zl2D71
+!i10b 1
+Asyn
+R81
+R2
+R3
+DEx4 work 8 lpm_mux1 0 22 C8S22TXD>eE[6mR=fJgDl0
+l64
+L53
+V@TQenz;F5Lj@ZcaAZM<P22
+R7
+31
+R89
+R90
+R91
+R11
+R12
+!s100 mKjPUY@GWI0OiF@9jjSO:3
+!i10b 1
+Emarreg
+Z92 w1458443850
+R39
+R2
+R3
+R4
+Z93 8Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd
+Z94 FZ:/ELEC374/Project Phase 1 MMJ/marReg.vhd
+l0
+L7
+VVV1_gFNHlm;o[:LYKkBhh1
+R7
+31
+Z95 !s108 1459266068.769000
+Z96 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd|
+Z97 !s107 Z:/ELEC374/Project Phase 1 MMJ/marReg.vhd|
+R11
+R12
+!s100 ^;]I_ON]VY:@^=?<Z_8^70
+!i10b 1
+Abehaviour
+R39
+R2
+R3
+DEx4 work 6 marreg 0 22 VV1_gFNHlm;o[:LYKkBhh1
+l16
+L14
+V`0<:`;fM16dlU0[XEe]Dl0
+R7
+31
+R95
+R96
+R97
+R11
+R12
+!s100 =>ZNI^dM2deWE7PGZMf5W0
+!i10b 1
+Emdr_unit
+Z98 w1456252556
+R2
+R3
+R4
+Z99 8Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd
+Z100 FZ:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd
+l0
+L9
+V2GaA7T:I2c8^D>2Ul26Sk0
+R7
+31
+Z101 !s108 1459266069.473000
+Z102 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd|
+Z103 !s107 Z:/ELEC374/Project Phase 1 MMJ/MDR_Unit.vhd|
+R11
+R12
+!s100 5XiW;cYn[7>WE=ViDEV@@0
+!i10b 1
+Abdf_type
+R2
+R3
+DEx4 work 8 mdr_unit 0 22 2GaA7T:I2c8^D>2Ul26Sk0
+l40
+L17
+VG[<z=ORWP=7znLOS<1JAQ0
+R7
+31
+R101
+R102
+R103
+R11
+R12
+!s100 S;n@k]BfXU_Yl1MZ[CeON2
+!i10b 1
+Ememory
+Z104 w1459216022
+R39
+R2
+R3
+R4
+Z105 8Z:/ELEC374/Project Phase 1 MMJ/memory.vhd
+Z106 FZ:/ELEC374/Project Phase 1 MMJ/memory.vhd
+l0
+L5
+VlRzNU@4n9fd]U5V@NhSmN3
+R7
+31
+Z107 !s108 1459266070.149000
+Z108 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/memory.vhd|
+Z109 !s107 Z:/ELEC374/Project Phase 1 MMJ/memory.vhd|
+R11
+R12
+!s100 <REY3OVZ@3=P:RPN[aWeK1
+!i10b 1
+Abehavioral
+R39
+R2
+R3
+DEx4 work 6 memory 0 22 lRzNU@4n9fd]U5V@NhSmN3
+l21
+L14
+V<jcZb=g2kn3eR6kTJWhk52
+R7
+31
+R107
+R108
+R109
+R11
+R12
+!s100 EeWEe1K7zVg_eOnD7^_SI2
+!i10b 1
+Emult32bit
+Z110 w1459105244
+R2
+R3
+R4
+Z111 8Z:/ELEC374/Project Phase 1 MMJ/mult32bit.vhd
+Z112 FZ:/ELEC374/Project Phase 1 MMJ/mult32bit.vhd
+l0
+L42
+VReb:17;2`0c_9DPN7CDeS0
+R7
+31
+Z113 !s108 1459266056.709000
+Z114 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/mult32bit.vhd|
+Z115 !s107 Z:/ELEC374/Project Phase 1 MMJ/mult32bit.vhd|
+R11
+R12
+!s100 f_]]j4i]TX:fO4^65B3PW1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 9 mult32bit 0 22 Reb:17;2`0c_9DPN7CDeS0
+l74
+L52
+Vi:Hg77?liCNgkL:z1>=XH0
+R7
+31
+R113
+R114
+R115
+R11
+R12
+!s100 T^;5^i:hi]oG=TBc?i@6I1
+!i10b 1
+Enegate
+R69
+R2
+R3
+R4
+Z116 8Z:/ELEC374/Project Phase 1 MMJ/negate.vhd
+Z117 FZ:/ELEC374/Project Phase 1 MMJ/negate.vhd
+l0
+L42
+V>DmT>]Yf10@n_P2KY:5Vd0
+R7
+31
+Z118 !s108 1459266070.879000
+Z119 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/negate.vhd|
+Z120 !s107 Z:/ELEC374/Project Phase 1 MMJ/negate.vhd|
+R11
+R12
+!s100 2=<9U_2M14=f<5MNkO;7N2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 6 negate 0 22 >DmT>]Yf10@n_P2KY:5Vd0
+l74
+L51
+V<<InBL2D4m:l3S2L?N_861
+R7
+31
+R118
+R119
+R120
+R11
+R12
+!s100 <[1gHSMX]mN[J4ScK?WYN0
+!i10b 1
+Epcincr
+Z121 w1459207158
+R2
+R3
+R4
+Z122 8Z:/ELEC374/Project Phase 1 MMJ/PCincr.vhd
+Z123 FZ:/ELEC374/Project Phase 1 MMJ/PCincr.vhd
+l0
+L42
+VFomVjANo7XI=e;OIf<2n62
+R7
+31
+Z124 !s108 1459266049.804000
+Z125 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/PCincr.vhd|
+Z126 !s107 Z:/ELEC374/Project Phase 1 MMJ/PCincr.vhd|
+R11
+R12
+!s100 3B`lX5P8zERU?PeEVSVek3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 6 pcincr 0 22 FomVjANo7XI=e;OIf<2n62
+l74
+L51
+V?gWd<fAO=[cM^8UTzXaP30
+R7
+31
+R124
+R125
+R126
+R11
+R12
+!s100 J5N0;bCigjVFmGJIcljS40
+!i10b 1
+Ephase3_tb
+Z127 w1459265968
+R26
+R39
+R2
+R3
+R4
+Z128 8Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd
+Z129 FZ:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd
+l0
+L7
+V:]RP6UlE=4l8cSF2DZKX=3
+!s100 [E5GdLL`?>Nk9dIOY>YS`0
+R7
+31
+!i10b 1
+Z130 !s108 1459266081.010000
+Z131 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd|
+Z132 !s107 Z:/ELEC374/Project Phase 1 MMJ/phase3_tb.vhd|
+R11
+R12
+Abehaviour
+R26
+R39
+R2
+R3
+DEx4 work 9 phase3_tb 0 22 :]RP6UlE=4l8cSF2DZKX=3
+l82
+L11
+V;f7U4G9h_Je3o2T6[c`1b3
+!s100 KY_1G^9B`n4K4Lfnz?b4k1
+R7
+31
+!i10b 1
+R130
+R131
+R132
+R11
+R12
+Ereg32
+Z133 w1458054054
+R2
+R3
+R4
+Z134 8Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd
+Z135 FZ:/ELEC374/Project Phase 1 MMJ/REG32.vhd
+l0
+L6
+V<];WK0K5141;RC]TT2>222
+R7
+31
+Z136 !s108 1459266071.578000
+Z137 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd|
+Z138 !s107 Z:/ELEC374/Project Phase 1 MMJ/REG32.vhd|
+R11
+R12
+!s100 FE[Yb3WCj1HBSQjJ7nOES1
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 5 reg32 0 22 <];WK0K5141;RC]TT2>222
+l15
+L13
+VkTCE;SnUN1_G<JiB@cCjO2
+R7
+31
+R136
+R137
+R138
+R11
+R12
+!s100 4<8>36FJ2<8FgWgCB>nF31
+!i10b 1
+Ereg64
+Z139 w1458053970
+R2
+R3
+R4
+Z140 8Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd
+Z141 FZ:/ELEC374/Project Phase 1 MMJ/REG64.vhd
+l0
+L5
+V>RR9KkoGzfNOdYRzzz2im1
+R7
+31
+Z142 !s108 1459266072.276000
+Z143 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd|
+Z144 !s107 Z:/ELEC374/Project Phase 1 MMJ/REG64.vhd|
+R11
+R12
+!s100 U`0CUk;Ig`N@=Sf0^2Ok_0
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 5 reg64 0 22 >RR9KkoGzfNOdYRzzz2im1
+l15
+L13
+VSk7Tk?baUAK_MIBjCS`:21
+R7
+31
+R142
+R143
+R144
+R11
+R12
+!s100 V;AEk5iNT[=DEQc?4EVcX3
+!i10b 1
+Eregspecial0
+Z145 w1459108004
+R2
+R3
+R4
+Z146 8Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd
+Z147 FZ:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd
+l0
+L5
+V:Yc9e1E^:a]R13X>0>1g12
+R7
+31
+Z148 !s108 1459266072.958000
+Z149 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd|
+Z150 !s107 Z:/ELEC374/Project Phase 1 MMJ/RegSpecial0.vhd|
+R11
+R12
+!s100 bmc[FVnW52=`j@4=N2jAN1
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 11 regspecial0 0 22 :Yc9e1E^:a]R13X>0>1g12
+l15
+L13
+V;`T[=RoS9Zk`SV30LS]k^3
+R7
+31
+R148
+R149
+R150
+R11
+R12
+!s100 F`z5J[7XhalEFT@_4bE1j0
+!i10b 1
+Erotate_left
+R69
+R2
+R3
+R4
+Z151 8Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd
+Z152 FZ:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd
+l0
+L42
+VHlT0BDR4I8]0liQRJ[SkJ1
+R7
+31
+Z153 !s108 1459266073.621000
+Z154 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd|
+Z155 !s107 Z:/ELEC374/Project Phase 1 MMJ/rotate_left.vhd|
+R11
+R12
+!s100 Sc5:amhWR^3[1Ea`o_Nkh0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 11 rotate_left 0 22 HlT0BDR4I8]0liQRJ[SkJ1
+l74
+L52
+VnYAMWOoIRK[0bZTS=f:go3
+R7
+31
+R153
+R154
+R155
+R11
+R12
+!s100 z;BCYbC105FN5nf1VU2de3
+!i10b 1
+Erotate_right
+R69
+R2
+R3
+R4
+Z156 8Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd
+Z157 FZ:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd
+l0
+L42
+VT72To;0_V@l6o1<azcRMi2
+R7
+31
+Z158 !s108 1459266074.281000
+Z159 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd|
+Z160 !s107 Z:/ELEC374/Project Phase 1 MMJ/rotate_right.vhd|
+R11
+R12
+!s100 d9@SnY:7J0BZN=M1M[5NN0
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 12 rotate_right 0 22 T72To;0_V@l6o1<azcRMi2
+l74
+L52
+ViDM3Vk=a:bK8j`c]_:Qh30
+R7
+31
+R158
+R159
+R160
+R11
+R12
+!s100 dff<nF>?KFS@[GgU^YL>]2
+!i10b 1
+Eselandencode
+Z161 w1459110178
+R2
+R3
+R4
+Z162 8Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd
+Z163 FZ:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd
+l0
+L4
+V`IDcl9RmKo[5Rd_hf=iZo3
+R7
+31
+Z164 !s108 1459266074.971000
+Z165 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd|
+Z166 !s107 Z:/ELEC374/Project Phase 1 MMJ/selAndEncode.vhd|
+R11
+R12
+!s100 :8Kldn1HN3V6;2Ez`zOLg0
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 12 selandencode 0 22 `IDcl9RmKo[5Rd_hf=iZo3
+l32
+L16
+V[L8d1^gn4]44CQE52_U>K2
+R7
+31
+R164
+R165
+R166
+R11
+R12
+!s100 Na5j:ER6Red`IhGB]f@f63
+!i10b 1
+Eseven_segment
+Z167 w1459103630
+R2
+R3
+R4
+Z168 8Z:/ELEC374/Project Phase 1 MMJ/Seven_Segment.vhd
+Z169 FZ:/ELEC374/Project Phase 1 MMJ/Seven_Segment.vhd
+l0
+L4
+V02_gJV?bVOKoj]FLOC`mR0
+R7
+31
+Z170 !s108 1459266055.993000
+Z171 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/Seven_Segment.vhd|
+Z172 !s107 Z:/ELEC374/Project Phase 1 MMJ/Seven_Segment.vhd|
+R11
+R12
+!s100 j_>D77jCPdYiMeJ`U8N0Z3
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 13 seven_segment 0 22 02_gJV?bVOKoj]FLOC`mR0
+l11
+L10
+VEjEZW^UNZNak6iJ6R3UCT1
+R7
+31
+R170
+R171
+R172
+R11
+R12
+!s100 L:cAN9;4EMSSmg@JNfO3X0
+!i10b 1
+Eshift
+R69
+R2
+R3
+R4
+Z173 8Z:/ELEC374/Project Phase 1 MMJ/shift.vhd
+Z174 FZ:/ELEC374/Project Phase 1 MMJ/shift.vhd
+l0
+L42
+VlimQ5<7eFGKVPjEV4B3bi3
+R7
+31
+Z175 !s108 1459266076.320000
+Z176 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/shift.vhd|
+Z177 !s107 Z:/ELEC374/Project Phase 1 MMJ/shift.vhd|
+R11
+R12
+!s100 2;nKg@2D48LhRh2Zkkj231
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 5 shift 0 22 limQ5<7eFGKVPjEV4B3bi3
+l74
+L53
+VEdo_hP@UJDLI_SSj^gIQo0
+R7
+31
+R175
+R176
+R177
+R11
+R12
+!s100 k5_82lVIc1a8f6`VJ3LfB2
+!i10b 1
+Eshift_left
+R69
+R2
+R3
+R4
+Z178 8Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd
+Z179 FZ:/ELEC374/Project Phase 1 MMJ/shift_left.vhd
+l0
+L42
+VXAF?9d<4[WECnnfZ?:aRW2
+R7
+31
+Z180 !s108 1459266076.998000
+Z181 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd|
+Z182 !s107 Z:/ELEC374/Project Phase 1 MMJ/shift_left.vhd|
+R11
+R12
+!s100 W?Te1045UiU=HHf1c<Q?E2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 10 shift_left 0 22 XAF?9d<4[WECnnfZ?:aRW2
+l74
+L52
+VLX=BTiCZ[zJBhZ:DOahL00
+R7
+31
+R180
+R181
+R182
+R11
+R12
+!s100 eZLB4=WP53InKVjh1KTFa1
+!i10b 1
+Eshift_right
+R69
+R2
+R3
+R4
+Z183 8Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd
+Z184 FZ:/ELEC374/Project Phase 1 MMJ/shift_right.vhd
+l0
+L42
+VUQoZMVEEioo60Lkd;Vz]?0
+R7
+31
+Z185 !s108 1459266077.644000
+Z186 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd|
+Z187 !s107 Z:/ELEC374/Project Phase 1 MMJ/shift_right.vhd|
+R11
+R12
+!s100 ]hE3d;j8d:`P`]eM:eBDQ3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 11 shift_right 0 22 UQoZMVEEioo60Lkd;Vz]?0
+l72
+L52
+VBY`jcncFH=oiBa_ZmXX<d3
+R7
+31
+R185
+R186
+R187
+R11
+R12
+!s100 8C4`iEh4gh6gHc2=V`ffM1
+!i10b 1
+Eshiftl64
+R69
+R2
+R3
+R4
+Z188 8Z:/ELEC374/Project Phase 1 MMJ/shiftL64.vhd
+Z189 FZ:/ELEC374/Project Phase 1 MMJ/shiftL64.vhd
+l0
+L42
+VSRNRJL4KiOYV@N53=2A1W0
+R7
+31
+Z190 !s108 1459266078.312000
+Z191 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/shiftL64.vhd|
+Z192 !s107 Z:/ELEC374/Project Phase 1 MMJ/shiftL64.vhd|
+R11
+R12
+!s100 a2;7IcnhCSBN[LKlRj5n92
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 8 shiftl64 0 22 SRNRJL4KiOYV@N53=2A1W0
+l74
+L52
+VlF<MR=UB@>6iDIXNl1>_62
+R7
+31
+R190
+R191
+R192
+R11
+R12
+!s100 DkGo_7Do2hBLG[[^2cdTA2
+!i10b 1
+Esigned_division
+R69
+R2
+R3
+R4
+Z193 8Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd
+Z194 FZ:/ELEC374/Project Phase 1 MMJ/signed_division.vhd
+l0
+L42
+V[h:j@]MKKU^__UD5]=Mce3
+R7
+31
+Z195 !s108 1459266078.962000
+Z196 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd|
+Z197 !s107 Z:/ELEC374/Project Phase 1 MMJ/signed_division.vhd|
+R11
+R12
+!s100 fASTmX?_b2k<PeZXaA1m32
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 15 signed_division 0 22 [h:j@]MKKU^__UD5]=Mce3
+l77
+L53
+VKP[o`U?QOeUgK7k@kMM9<3
+R7
+31
+R195
+R196
+R197
+R11
+R12
+!s100 DkU4Rz@OWOb4hk^VRRYG20
+!i10b 1
+Esub
+R69
+R2
+R3
+R4
+Z198 8Z:/ELEC374/Project Phase 1 MMJ/sub.vhd
+Z199 FZ:/ELEC374/Project Phase 1 MMJ/sub.vhd
+l0
+L42
+Vk3[Xdk^>FAKP4RoYGDGJD2
+R7
+31
+Z200 !s108 1459266079.637000
+Z201 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/sub.vhd|
+Z202 !s107 Z:/ELEC374/Project Phase 1 MMJ/sub.vhd|
+R11
+R12
+!s100 Kebdz9dSg2;];LkAOdzJD2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 3 sub 0 22 k3[Xdk^>FAKP4RoYGDGJD2
+l73
+L52
+Va6Ogk[HUM0gj6B?0oQXmd0
+R7
+31
+R200
+R201
+R202
+R11
+R12
+!s100 lolbN^mI]]PA@O:f^C`gZ1
+!i10b 1
+Eworkingbooth
+Z203 w1456613852
+R39
+Z204 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+Z205 8Z:/ELEC374/Project Phase 1 MMJ/workingBooth.vhd
+Z206 FZ:/ELEC374/Project Phase 1 MMJ/workingBooth.vhd
+l0
+L8
+V1Q]A2nF7682XjVh_LO8V83
+R7
+31
+Z207 !s108 1459266080.315000
+Z208 !s90 -reportprogress|300|-93|-work|work|Z:/ELEC374/Project Phase 1 MMJ/workingBooth.vhd|
+Z209 !s107 Z:/ELEC374/Project Phase 1 MMJ/workingBooth.vhd|
+R11
+R12
+!s100 fV50zh[O[E6UfGQ=7kCdd1
+!i10b 1
+Abehaviour
+R39
+R204
+R2
+R3
+DEx4 work 12 workingbooth 0 22 1Q]A2nF7682XjVh_LO8V83
+l95
+L15
+V@5zcSAP^Lj4mH8ROgfLNS1
+R7
+31
+R207
+R208
+R209
+R11
+R12
+!s100 F78Z_aGSFNRlXCbWM1bAe3
+!i10b 1

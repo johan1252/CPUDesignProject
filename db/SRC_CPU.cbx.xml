@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SRC_CPU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|PCincr:ALU_PCincr|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_msh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|add:ALU_add|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_vhh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|mult32bit:ALU_multiply|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_d7n.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|rotate_right:ALU_rotate_right|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_jhc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|shift_right:ALU_shift_logical_right|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_vjc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|signed_division:ALU_signed_division|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_hjp.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ConFF:con_logic|Decoder2to4:decoder|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_0af.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|negate:ALU_negate|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_u2i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|rotate_left:ALU_rotate_left|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_iib.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|shift_left:ALU_shift_logical_left|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ALU_Toplevel:ALU|sub:ALU_sub|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_0jh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|CPU_Bus_Redesign:BUSmap|lpm_mux0:b2v_inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_k9e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|MDR_Unit:b2v_MDR_Unit|lpm_mux1:b2v_inst1|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_t7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|megaRAM:ram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v4k1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,402 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+
+entity workingBooth is
+port(
+	m, q: in std_logic_vector(31 downto 0);
+	--qTempOut : out std_logic_vector(31 downto 0);
+	--codetest, i_value: out std_logic_vector(2 downto 0);
+	clk, start, reset: in std_logic;
+	result2 : out std_logic_vector(63 downto 0)
+	--test, finalROut : out std_logic_VECTOR (63 downto 0)
+);
+end entity;
+
+architecture behaviour of workingBooth is
+
+--component baShiftL is
+--port(
+--	data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+--	distance		: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+--	result		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+--);
+--end component;
+
+component shiftL64 IS
+	PORT
+	(
+		data		: IN STD_LOGIC_VECTOR (63 DOWNTO 0);
+		distance		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+		result		: OUT STD_LOGIC_VECTOR (63 DOWNTO 0)
+	);
+END component;
+
+component vectorAdd IS
+	PORT
+	(
+		dataa		: IN STD_LOGIC_VECTOR (63 DOWNTO 0);
+		datab		: IN STD_LOGIC_VECTOR (63 DOWNTO 0);
+		result		: OUT STD_LOGIC_VECTOR (63 DOWNTO 0)
+	);
+	
+END component;
+
+type state_type is (	s0, s1, s2, s3, s4, s5, s6, s7, s8, s9,
+							s10, s11, s12, s13, s14, s15);
+							
+							--s15, s16, s17, s18, s19,
+							--s20, s21, s22, s23, s24, s25, s26, s27, s28, s29,
+							--s30);	
+signal state : state_type;
+signal ms: std_logic_vector(31 downto 0);	--shifted version of M
+signal qrs, shiftRegister: std_logic_vector(63 downto 0);
+signal shift_value: std_LOGIC_VECTOR(5 downto 0);
+
+function qRecode (input: std_logic_vector(2 downto 0); mIn: std_logic_vector(31 downto 0); msIn: std_logic_vector(31 downto 0))
+	return  std_logic_vector is 
+	--declarations local to function
+	variable code : std_logic_vector(2 downto 0);
+	variable qr : std_logic_vector(31 downto 0);
+	variable qrx: std_logic_vector(63 downto 0);
+	
+	begin
+		if(input = "000") then
+			code := "000";
+		elsif(input = "001") then
+			code := "001";
+		elsif(input = "010") then
+			code := "001";
+		elsif(input = "011") then
+			code := "010";
+		elsif(input = "100") then
+			code := "110";
+		elsif(input = "101") then
+			code := "111";
+		elsif(input = "110") then
+			code := "111";
+		elsif(input = "111") then
+			code := "000";
+		end if;
+
+		--set qrecoded based on code
+		if(code="000") then
+			qr :=(others=>'0');
+		elsif(code="001") then
+			qr := mIn;
+		elsif(code="010") then
+			qr := msIn;
+		elsif(code="110") then -- -2 0000000000000000000000000000000000000000000000000000000000000001
+			qr := (unsigned(not msIn) + 1 );
+		elsif(code="111") then 
+			qr := (unsigned(not mIn) + 1); 
+		end if; 
+		
+		--sign extend q recoded
+		if(qr(31) = '0') then 
+			qrx := (others => '0'); 
+			qrx(31 downto 0) := qr; 
+		elsif(qr(31) = '1') then 
+			qrx := (others => '1'); 
+			qrx(31 downto 0) := qr;
+		end if;
+		
+		return qrx;
+	end qRecode;
+	
+--function ShiftAdd (inResult: std_logic_vector(63 downto 0); shift_value: integer)
+--	return  std_logic_vector is 
+--	--declarations local to function
+--		variable saResult: std_logic_vector(63 downto 0);
+--	
+--	begin
+--		
+--		return saResult;
+--	end ShiftAdd;
+--
+begin 
+
+--m_shift_L : baShiftL -- shifting m to multiply by 2 
+--port map (
+--	data => m,
+--	distance => "00001",
+--	result => ms
+--);
+
+qrx_shift_L : shiftL64
+port map (
+	data => shiftRegister,
+	distance => "000001",
+	result => qrs
+);
+
+the_fsm: process (m,q,ms,clk,reset, start)
+--
+variable tempResult, tempResultQ, tempResult0, shift : std_logic_vector(63 downto 0); 
+variable code0 : std_logic_vector(2 downto 0);
+variable qr0 : std_logic_vector(31 downto 0);
+variable qrx0: std_logic_vector(63 downto 0);
+variable firstTime: std_logic := '1'; 
+begin
+	if(reset = '1') then
+		state <= s15;
+	elsif(rising_edge(clk)) then
+	case (state) is
+			when s15 =>
+			if(q(1 downto 0) = "00" or q(1 downto 0) = "11") then
+					code0 := "000";
+			elsif(q(1 downto 0) = "01") then
+					code0 := "001";
+			elsif(q(1 downto 0)= "10") then
+					code0 := "110";
+			end if;
+			
+			--set qrecoded based on code
+			if(code0="000") then
+				qr0 :=(others=>'0');
+			elsif(code0="001") then
+				qr0 := m;
+			elsif(code0="110") then -- -2 0000000000000000000000000000000000000000000000000000000000000001
+				qr0 := (unsigned(not ms) + 1 );
+			end if; 
+		
+			--sign extend q recoded
+			if(qr0(31) = '0') then 
+				qrx0 := (others => '0'); 
+				qrx0(31 downto 0) := qr0; 
+			elsif(qr0(31) = '1') then 
+				qrx0 := (others => '1'); 
+				qrx0(31 downto 0) := qr0;
+			end if;
+			
+			tempResult0 := qrx0; 
+			state <= s0;
+
+			--firstTime := '0';
+			
+		--else
+			
+			when s0 =>
+				tempResultQ := qrecode(q(3 downto 1), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 2) := tempResultQ(61 downto 0);
+				tempResult := shift + tempResult0;
+				state <= s1; 
+
+				
+			when s1 => 
+				tempResultQ := qrecode(q(5 downto 3), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 4) := tempResultQ(59 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s2;
+
+
+			when s2 => 
+				tempResultQ := qrecode(q(7 downto 5), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 6) := tempResultQ(57 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s3;
+				--result2 <= tempResult;
+-----------------------------
+			when s3 => 
+				tempResultQ := qrecode(q(9 downto 7), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 8) := tempResultQ(55 downto 0);
+				tempResult := shift + tempResult;  
+				state <= s4;
+
+			when s4 => 
+				tempResultQ := qrecode(q(11 downto 9), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 10) := tempResultQ(53 downto 0);
+				tempResult := shift + tempResult;  
+				state <= s5;
+
+			when s5 => 
+				tempResultQ := qrecode(q(13 downto 11), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 12) := tempResultQ(51 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s6;
+
+			when s6 => 
+				tempResultQ := qrecode(q(15 downto 13), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 14) := tempResultQ(49 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s7;
+
+			when s7 => 
+				tempResultQ := qrecode(q(17 downto 15), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 16) := tempResultQ(47 downto 0);
+				tempResult := shift + tempResult;  
+				state <= s8;
+
+			when s8 => 
+				tempResultQ := qrecode(q(19 downto 17), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 18) := tempResultQ(45 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s9;
+
+			when s9 => 
+				tempResultQ := qrecode(q(21 downto 19), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 20) := tempResultQ(43 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s10;
+
+			when s10 => 
+				tempResultQ := qrecode(q(23 downto 21), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 22) := tempResultQ(41 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s11;
+
+			when s11 => 
+				tempResultQ := qrecode(q(25 downto 23), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 24) := tempResultQ(39 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s12;
+
+			when s12 => 
+				tempResultQ := qrecode(q(27 downto 25), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 26) := tempResultQ(37 downto 0);
+				tempResult := shift + tempResult; 
+				state <= s13;
+				
+			when s13 => 
+				tempResultQ := qrecode(q(29 downto 27), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 28) := tempResultQ(35 downto 0);
+				tempResult := shift + tempResult;  
+				state <= s14;
+
+			when s14 => 
+				tempResultQ := qrecode(q(31 downto 29), m, ms);	--returns 64 bit unshifted vector 
+				shift := (others => '0');
+				shift(63 downto 30) := tempResultQ(33 downto 0);
+				tempResult := shift + tempResult; 
+				result2 <= tempResult;
+
+				--state <= s15;
+				
+--			when s15 => 
+--				tempResult := qrecode(q(33 downto 31), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "001111";
+--				tempResult := qrs;
+--				state <= s16;
+--				
+--			when s16 => 
+--				tempResult := qrecode(q(35 downto 33), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010000";
+--				tempResult := qrs;
+--				state <= s17;
+--				
+--			when s17 => 
+--				tempResult := qrecode(q(37 downto 35), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010001";
+--				tempResult := qrs;
+--				state <= s18;
+--			
+--			when s18 => 
+--				tempResult := qrecode(q(39 downto 37), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010010";
+--				tempResult := qrs;
+--				state <= s19;
+--				
+--			when s19 => 
+--				tempResult := qrecode(q(41 downto 39), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010011";
+--				tempResult := qrs;
+--				
+--			when s20 => 
+--				tempResult := qrecode(q(43 downto 41), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010100";
+--				tempResult := qrs;
+--				state <= s21;
+--			
+--			when s21 => 
+--				tempResult := qrecode(q(45 downto 43), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010101";
+--				tempResult := qrs;
+--				state <= s22;
+--			
+--			when s22 => 
+--				tempResult := qrecode(q(47 downto 45), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010110";
+--				tempResult := qrs;
+--				state <= s23;
+--				
+--			when s23 => 
+--				tempResult := qrecode(q(49 downto 47), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "010111";
+--				tempResult := qrs;
+--				
+--			when s24 => 
+--				tempResult := qrecode(q(51 downto 49), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "011000";
+--				tempResult := qrs;
+--				state <= s25;
+--				
+--			when s25 => 
+--				tempResult := qrecode(q(53 downto 51), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "011001";
+--				tempResult := qrs;
+--				state <= s26;
+--				
+--			when s26 => 
+--				tempResult := qrecode(q(55 downto 53), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "011010";
+--				tempResult := qrs; 
+--				state <= s27;
+--				
+--			when s27 => 
+--				tempResult := qrecode(q(57 downto 55), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "011011";
+--				tempResult := qrs;
+--				
+--			when s28 => 
+--				tempResult := qrecode(q(59 downto 57), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "011100";
+--				tempResult := qrs;
+--				state <= s29;
+--				
+--			when s29 => 
+--				tempResult := qrecode(q(61 downto 59), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "011101";
+--				tempResult := qrs;
+--				state <= s30;
+--			
+--			when s30 => 
+--				tempResult := qrecode(q(63 downto 61), m, ms);	--returns 64 bit unshifted vector 
+--				shiftRegister <= tempResult;
+--				shift_value <= "011110";
+--				tempResult := qrs;
+			end case;
+		--result2 <= tempResult;
+			end if;
+	end process; 
+end architecture; 			
+			

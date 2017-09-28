@@ -1,0 +1,49 @@
+library iee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity boothJohu is
+port(
+	inA : std_logic_vector(31 downto 0);
+	inB : std_logic_vector(31 downto 0);
+	result : std_logic_vector(63 downto 0);
+	test : std_logic_vector(63 downto 0)
+);
+
+architecture behaviour of boothJohu is
+
+component add is
+port(
+		dataa		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		datab		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		result		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+	);
+end component add;
+
+signal add_result : std_LOGIC_VECTOR(31 downto 0);
+signal intermediate_result : std_LOGIC_VECTOR(31 downto 0);
+
+begin
+
+booth_add : add
+port map(
+		dataa	=> add1,	
+		datab	=> add2,	
+		result => add_result		
+	);
+
+procure : process is
+begin 
+
+add1 <= inA;
+add2 <= inB;
+intermediate_result <= add_result;
+result <= add_result;
+
+for i in 0 to 4 loop
+		add2 <= intermediate_result;
+		result <= add_result;
+		intermediate_result <= add_result;
+end loop;
+
+end process;

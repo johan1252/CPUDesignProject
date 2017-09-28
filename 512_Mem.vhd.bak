@@ -1,0 +1,34 @@
+library IEEE; 
+use IEEE.std_logic_1164.all; 
+use IEEE.std_logic_arith.all; 
+
+entity memory is 
+port (
+		address: in unsigned(31 downto 0);
+		write_date: in std_logic_vector(31 downto 0);
+		MemWrite, MemRead: in std_logic; 
+		read_data: out std_logic_vector(31 downto 0)); 
+end entity memory; 
+
+architecture behavioral of memory is 
+type mem_array is array(0 to 511) of std_logic_vector(31 downto 0); 
+
+begin 
+	mem_process: process(address,write_data) is 
+	variable data_mem : mem_array; 
+	variable addr: integer; 
+	begin 
+		for i in 0 to 511 loop 
+		data_mem(i) := "X00000000"; 
+		end loop; 	
+		
+		addr := conv_integer(address(8 downto 0)); 
+		if MemWrite = '1' then 
+			data_mem(addr) := write_data; 
+		elsif MemRead = '1' then 
+			read_data <= data_mem(addr) after 10 ns;
+		end if; 
+	end process; 
+end architecture; 	
+		
+	

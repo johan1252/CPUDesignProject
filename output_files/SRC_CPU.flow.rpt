@@ -1,0 +1,621 @@
+Flow report for SRC_CPU
+Tue Mar 29 13:06:57 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Flow Failed - Tue Mar 29 13:06:56 2016           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; SRC_CPU                                          ;
+; Top-level Entity Name              ; datapath                                         ;
+; Family                             ; Cyclone III                                      ;
+; Device                             ; EP3C16F484C6                                     ;
+; Timing Models                      ; Final                                            ;
+; Total logic elements               ; 4,225 / 15,408 ( 27 % )                          ;
+;     Total combinational functions  ; 3,487 / 15,408 ( 23 % )                          ;
+;     Dedicated logic registers      ; 1,102 / 15,408 ( 7 % )                           ;
+; Total registers                    ; 1102                                             ;
+; Total pins                         ; 1,000 / 347 ( 288 % )                            ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 16,384 / 516,096 ( 3 % )                         ;
+; Embedded Multiplier 9-bit elements ; 8 / 112 ( 7 % )                                  ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
++------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/29/2016 13:05:19 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; SRC_CPU             ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 29563462349350.145927111851880        ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; workingBoothTB ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; add_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; sub_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mul_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mulbooth_tb    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; div_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; and_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; or_tb          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; shr_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; shl_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; ror_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; rol_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; neg_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; not_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mem_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; phase2_tb      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; random_tb      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; phase3_tb      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; phase3_tb                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; workingBoothTB.vhd                    ; --            ; --          ; workingBoothTB ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; workingBoothTB ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_tb.vhd                            ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub_tb.vhd                            ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; mul_tb.vhd                            ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mulbooth_tb.vhd                       ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; div_tb.vhd                            ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; and_tb.vhd                            ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; or_tb.vhd                             ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shr_tb.vhd                            ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shl_tb.vhd                            ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ror_tb.vhd                            ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rol_tb.vhd                            ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; neg_tb.vhd                            ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add_sub.vhd                           ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; not_tb.vhd                            ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_FILE                  ; mem_tb.vhd                            ; --            ; --          ; mem_tb         ;
+; EDA_TEST_BENCH_FILE                  ; memory.vhd                            ; --            ; --          ; mem_tb         ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; array_mult.vhd                        ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; memory.vhd                            ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; PCincr.vhd                            ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; phase2_tb.vhd                         ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_FILE                  ; random_tb.vhd                         ; --            ; --          ; random_tb      ;
+; EDA_TEST_BENCH_FILE                  ; ConFF.vhd                             ; --            ; --          ; random_tb      ;
+; EDA_TEST_BENCH_FILE                  ; Decoder2to4.vhd                       ; --            ; --          ; random_tb      ;
+; EDA_TEST_BENCH_FILE                  ; add.vhd                               ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; ALU_Toplevel.vhd                      ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; ConFF.vhd                             ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; control_unit.vhd                      ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; CPU_Bus_Redesign.vhd                  ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; datapath.vhd                          ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; Decoder2to4.vhd                       ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; decoder4to16.vhd                      ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; fa1.vhd                               ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; lpm_decode0.vhd                       ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; lpm_encoder.vhd                       ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux0.vhd                          ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; lpm_mux1.vhd                          ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; marReg.vhd                            ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; MDR_Unit.vhd                          ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; memory.vhd                            ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; negate.vhd                            ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; REG32.vhd                             ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; REG64.vhd                             ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; RegSpecial0.vhd                       ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; rotate_left.vhd                       ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; rotate_right.vhd                      ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; selAndEncode.vhd                      ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shift.vhd                             ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shift_left.vhd                        ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shift_right.vhd                       ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; shiftL64.vhd                          ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; signed_division.vhd                   ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; sub.vhd                               ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; workingBooth.vhd                      ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_FILE                  ; phase3_tb.vhd                         ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; workingBoothTB                        ; --            ; --          ; workingBoothTB ;
+; EDA_TEST_BENCH_MODULE_NAME           ; add_tb                                ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; sub_tb                                ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mul_tb                                ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mulbooth_tb                           ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; div_tb                                ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; and_tb                                ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; or_tb                                 ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shr_tb                                ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shl_tb                                ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ror_tb                                ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; rol_tb                                ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; neg_tb                                ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; not_tb                                ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mem_tb                                ; --            ; --          ; mem_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; phase2_tb                             ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; random_tb                             ; --            ; --          ; random_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; phase3_tb                             ; --            ; --          ; phase3_tb      ;
+; EDA_TEST_BENCH_NAME                  ; workingBoothTB                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; add_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; sub_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; mul_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; mulbooth_tb                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; div_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; and_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; or_tb                                 ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; shr_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; shl_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; ror_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; rol_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; neg_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; not_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; mem_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; phase2_tb                             ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; random_tb                             ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; phase3_tb                             ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                ; --            ; --          ; workingBoothTB ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; add_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; sub_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; mul_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; mulbooth_tb    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; and_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; or_tb          ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; shr_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; shl_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; ror_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; rol_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; neg_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; not_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 400 ns                                ; --            ; --          ; mem_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10430 ns                              ; --            ; --          ; phase2_tb      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --            ; --          ; random_tb      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 23000 ns                              ; --            ; --          ; phase3_tb      ;
+; IP_TOOL_NAME                         ; LPM_MUX                               ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_DECODE                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_MUX                               ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_ADD_SUB                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_CLSHIFT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_CLSHIFT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_ADD_SUB                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_ADD_SUB                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_CLSHIFT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_CLSHIFT                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_DIVIDE                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_ADD_SUB                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_DECODE                            ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; LPM_MULT                              ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_mux0.bsf                          ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_mux0.cmp                          ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_decode0.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_decode0.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_mux1.bsf                          ; --            ; --          ; --             ;
+; MISC_FILE                            ; lpm_mux1.cmp                          ; --            ; --          ; --             ;
+; MISC_FILE                            ; negate.cmp                            ; --            ; --          ; --             ;
+; MISC_FILE                            ; shift_right.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; shift_left.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                            ; add.cmp                               ; --            ; --          ; --             ;
+; MISC_FILE                            ; sub.cmp                               ; --            ; --          ; --             ;
+; MISC_FILE                            ; rotate_right.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                            ; rotate_left.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; signed_division.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                            ; PCincr.cmp                            ; --            ; --          ; --             ;
+; MISC_FILE                            ; Decoder2to4.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; mult32bit.cmp                         ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; datapath    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; datapath    ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; datapath    ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; datapath                              ; SRC_CPU       ; --          ; --             ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:01:10     ; 1.0                     ; 651 MB              ; 00:00:44                           ;
+; Fitter               ; 00:00:19     ; 1.0                     ; 653 MB              ; 00:00:07                           ;
+; Total                ; 00:01:29     ; --                      ; --                  ; 00:00:51                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; BMH31413         ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter               ; BMH31413         ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off SRC_CPU -c SRC_CPU
+quartus_fit --read_settings_files=off --write_settings_files=off SRC_CPU -c SRC_CPU
+
+
+
