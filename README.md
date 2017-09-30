@@ -30,9 +30,9 @@ Altera DE0 board (not required for only simulation activities)
 ![alt text](https://github.com/johan1252/CPUDesignProject/blob/master/Simulation_Pictures/shr_simulation_small_image.png?raw=true)
 ## Authors
 
-Madeline Van Der Paelt
-Maytha Nassor
-Johan Cornelissen
+* Madeline Van Der Paelt
+* Maytha Nassor
+* Johan Cornelissen
 
 ## Acknowledgments
 
