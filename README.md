@@ -27,8 +27,7 @@ Altera DE0 board (not required for only simulation activities)
 	2. Another example, datapath.vhd combines all components required for the CPU's datapath.
 4. Use ModelSim to simulate various CPU functions. Image below shows a shift right register simulation (Other screenshots can be found in Simulation_Pictures directory).
 
-![alt text](https://github.com/johan1252/CPUDesignProject/blob/master/Simulation_Pictures/shr simulation.bmp?raw=true)
-
+![alt text](https://github.com/johan1252/CPUDesignProject/blob/master/Simulation_Pictures/shr_simulation_small_image.png?raw=true)
 ## Authors
 
 Madeline Van Der Paelt
